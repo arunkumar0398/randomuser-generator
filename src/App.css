@@ -65,13 +65,13 @@ p {
 .u-details p {
   margin: 4.3px 8px;
   color: #ccc;
-  margin-left: 18px;
+  margin-left: 26px;
 }
 
 .u-details p span {
   display: inline-block;
   margin-bottom: 1.4px;
-  margin-left: 22px;
+  margin-left: 12px;
 }
 
 .u-details p.name span.name {
