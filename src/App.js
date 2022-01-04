@@ -21,7 +21,6 @@ const App = () => {
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(10);
-  const [searchUser, setSearchUser] = useState("");
 
   useEffect(() => {
     fetch("https://randomuser.me/api/?results=100")
