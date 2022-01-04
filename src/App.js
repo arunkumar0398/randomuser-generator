@@ -21,6 +21,7 @@ const App = () => {
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(10);
+  const [searchUser, setSearchUser] = useState("");
 
   useEffect(() => {
     fetch("https://randomuser.me/api/?results=100")
@@ -83,21 +84,22 @@ const App = () => {
   const currentPosts = myApi?.slice(indexOfFirstPost, indexOfLastPost); // 0 to 10
 
   // search users by user input
-  const handleSearchInput = (event) => {
-    setSearchUser(event.target.value);
+  const handleSearchInput = (e) => {    
+    setSearchUser(e.target.value);
     const newData = renderData(
       data.filter((item) =>
-        item.name.first.toLowerCase().includes(event.target.value)
+        item.name.first.toLowerCase().includes(e.target.value)
       )
     );
     setMyApi(newData);
+
   };
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <div>
-      <Search onChange={handleSearchInput} />
+      <Search value={myApi}  onChange={handleSearchInput} />
 
       {currentPosts}
       <Pagination
