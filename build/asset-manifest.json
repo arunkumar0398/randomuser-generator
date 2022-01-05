@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/randomuser-generator/static/css/main.435f7fca.css",
+    "main.js": "/randomuser-generator/static/js/main.d086f4fa.js",
+    "index.html": "/randomuser-generator/index.html",
+    "main.435f7fca.css.map": "/randomuser-generator/static/css/main.435f7fca.css.map",
+    "main.d086f4fa.js.map": "/randomuser-generator/static/js/main.d086f4fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.435f7fca.css",
+    "static/js/main.d086f4fa.js"
+  ]
+}
