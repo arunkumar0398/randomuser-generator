@@ -88,7 +88,7 @@ const App = () => {
     setSearchUser(e.target.value);
     const newData = renderData(
       data.filter((item) =>
-        item.name.first.toLowerCase().includes(e.target.value)
+        item.name.first.includes(e.target.value)
       )
     );
     setMyApi(newData);
